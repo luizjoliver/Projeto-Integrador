@@ -12,12 +12,17 @@
 .navBar{
    display: flex;
    gap: 20px;
+   a{
+    transition: 600ms;
+    &:hover{
+        color: $Purple-dark;
+    }
+   }
    .petZoneLogo{
     color: $Purple-dark;
     position: relative;
-    :hover{
-        color: $Purple-light;
-    }
+    transition: 500ms;
+    
    }
 }
 .connectNav{
@@ -27,5 +32,22 @@
         background-color: $Purple-dark;
         padding: 10px;
         border-radius: 30px;
+    }
+   a{
+    transition: 600ms;
+    &:hover{
+        color: $Dark;
+    }
+   }
+}
+
+@media (max-width:470px){
+    .header{
+        flex-direction: column;
+        align-items: center;
+        height: 85px;
+    }
+    .connectNav{
+        margin-bottom: 5px;
     }
 }

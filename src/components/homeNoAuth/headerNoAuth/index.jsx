@@ -12,7 +12,7 @@ const HeaderNoAuth = () =>{
                         </nav>
                         <div className={styles.connectNav}>
                                 <span><Link href="/register" className={styles.registerBtn}>Cadastre-se</Link></span>
-                                <Link href="/login">Login</Link>
+                                <Link href="/login" className={styles.loginBtn}>Login</Link>
                         </div>
                   </header>
                 </>
