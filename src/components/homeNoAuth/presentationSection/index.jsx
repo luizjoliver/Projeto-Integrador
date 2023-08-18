@@ -5,9 +5,10 @@ const PresentationCardSection = () => {
       <>
          <div className={styles.container}>
             <main className={styles.main}>
-               <h1>Presentation Home Section</h1> 
-               <section>
-                  
+               <section className={styles.sectionPresentation}>
+                  <div className={styles.imgPresentation}> 
+                     <h1>Bem vindo ao PetZone</h1>
+                </div>
                </section>
             </main>
          </div>

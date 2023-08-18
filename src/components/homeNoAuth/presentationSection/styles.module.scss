@@ -5,8 +5,33 @@
     flex-direction: column;
 }
 .main{
+    height: 400px;
+    max-height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
     h1{
-        margin-top: 5%;
+        margin-bottom: 10%;
         text-align: center;
     }
+}
+.sectionPresentation{
+  height: 100%;
+  width: 100%;   
+   .imgPresentation {
+    background-image: url("https://www.racoesreis.com.br/wordpress/wp-content/uploads/imagem_do_post-105.jpg");
+    background-size: cover;  /* This will maintain aspect ratio and cover the container */
+    background-position: center center;
+    min-height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    h1{ 
+        font-size: 35px;
+        color: $Purple-light;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
 }

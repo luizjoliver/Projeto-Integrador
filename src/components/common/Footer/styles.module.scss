@@ -1,0 +1,12 @@
+@import "../../../../styles/global-colors.scss";
+
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: $Gray-dark;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
