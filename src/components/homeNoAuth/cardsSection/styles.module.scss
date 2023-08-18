@@ -1,0 +1,40 @@
+@import  "../../../../styles/global-colors.scss";
+
+.main{
+  height: 620px;
+  background-color: $Gray-light
+}
+.cardsContent{
+  width: 100%;
+  height: 200px;
+  background-color: $Gray-light;
+  h2{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+}
+.cardsContainer{
+  width: 100%;
+  height: calc( 500px - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  
+}
+.imgCard{
+    background-color: $Dark;
+    width: 600px;
+    height: 350px;
+    border-radius: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+.imgCard1{
+  @extend .imgCard ;
+}
+.imgCard2{
+  @extend .imgCard ;
+}
