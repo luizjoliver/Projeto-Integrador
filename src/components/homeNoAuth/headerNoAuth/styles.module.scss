@@ -2,18 +2,30 @@
 
 .header{
     width: 100%;
-    height: 100px;
+    height: 75px;
+    background-color: $Gray-dark;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
-    padding: 4px 0px;
-    background-color: $Purple-light;
+    justify-content: space-between;
+    padding: 10px 10px;
 }
-.ul{
-    list-style: none;
+.navBar{
+   display: flex;
+   gap: 20px;
+   .petZoneLogo{
+    color: $Purple-dark;
+    position: relative;
+    :hover{
+        color: $Purple-light;
+    }
+   }
+}
+.connectNav{
     display: flex;
-    gap: 30px;
-   
-    
+    gap: 20px;
+    .registerBtn{
+        background-color: $Purple-dark;
+        padding: 10px;
+        border-radius: 30px;
+    }
 }

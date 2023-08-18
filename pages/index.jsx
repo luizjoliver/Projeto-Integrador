@@ -16,11 +16,8 @@ export default function Home() {
       <title>PetZone - Index</title>
     </Head>
     <HeaderNoAuth/>
-    <div>
       <PresentationCardSection/>
       <CardSection/>
-    </div>
-      
     <Footer/>
     </>
   )
