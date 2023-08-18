@@ -1,3 +1,5 @@
+import Footer from "@/src/components/common/Footer"
+import HeaderNoAuth from "@/src/components/homeNoAuth/headerNoAuth"
 import Head from "next/head"
 
 const Login = () =>{
@@ -6,18 +8,14 @@ const Login = () =>{
         <Head>
          <title>PetZone - Login</title>
         </Head>
-         <header>
-            <p>Header não logado</p>
-        </header>
+         <HeaderNoAuth/>
         <h1>Login Page</h1>
 
         <main>
          <p>Contéudo aqui</p>
         </main>
 
-        <footer>
-            <p>Footer Copyright Petzone &copy;</p>
-        </footer>
+        <Footer/>
         </>
     )
 }
