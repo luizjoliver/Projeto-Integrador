@@ -1,21 +1,19 @@
-import Footer from "@/src/components/common/Footer"
-import HeaderNoAuth from "@/src/components/homeNoAuth/headerNoAuth"
+import LoginForm from "@/src/components/auth/login/form"
+import ImageAuth from "@/src/components/common/imageAuth"
 import Head from "next/head"
-
+import styles from "../styles/login.module.scss"
 const Login = () =>{
     return(
         <>
+
         <Head>
          <title>PetZone - Login</title>
         </Head>
-         <HeaderNoAuth/>
-        <h1>Login Page</h1>
+            <main className={styles.main}>
+                <ImageAuth/>
+                <LoginForm title="Login" btnText="Entrar" />
+            </main>
 
-        <main>
-         <p>Contéudo aqui</p>
-        </main>
-
-        <Footer/>
         </>
     )
 }

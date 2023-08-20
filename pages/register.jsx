@@ -1,7 +1,8 @@
-import Footer from "@/src/components/common/Footer"
-import HeaderNoAuth from "@/src/components/homeNoAuth/headerNoAuth"
+import LoginForm from "@/src/components/auth/login/form"
+import ImageAuth from "@/src/components/common/imageAuth"
 import Head from "next/head"
-
+import styles from "../styles/login.module.scss"
+import RegisterForm from "@/src/components/auth/register/form"
 
 
 const Register = () =>{
@@ -9,14 +10,12 @@ const Register = () =>{
         <>
         <Head>
             <title>PetZone - Register</title>
-            
-
         </Head>
-        <HeaderNoAuth/>
-        <main>
-       <h1>Register Page</h1>
-        <Footer/>
-        </main>
+        <main className={styles.main}>
+                <ImageAuth/>
+                <RegisterForm btnText="Registar" title="Register"/>
+            </main>
+        
         </>
     )
 }

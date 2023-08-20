@@ -5,7 +5,7 @@ const CardsSection = ({imgUrl1,imgUrl2,children,title}) =>{
         <>
                  <section className={styles.main}>
                     <div className={styles.cardsContent}>
-                        <h2>{title}</h2>
+                        <h2 className={styles.title}>{title}</h2>
                         <p className={styles.description}>{children}</p>
                     </div>
                     <div className={styles.cardsContainer}>
