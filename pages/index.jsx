@@ -49,7 +49,9 @@ export default function Home() {
         </TextSection>
 
         <div data-aos="fade-right" data-aos-duration="2000" >
-        <CardsSection imgUrl1="https://uploads.metropoles.com/wp-content/uploads/2022/05/02141436/conheca_as_racas_de_cachorros_mais_inteligentes_widexl.jpg" imgUrl2="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3261558:1659119891/Maltes.jpg?f=16x9&h=720&q=0.8&w=1280&$p$h$w=878c96e"/>
+        <CardsSection imgUrl1="https://uploads.metropoles.com/wp-content/uploads/2022/05/02141436/conheca_as_racas_de_cachorros_mais_inteligentes_widexl.jpg" imgUrl2="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3261558:1659119891/Maltes.jpg?f=16x9&h=720&q=0.8&w=1280&$p$h$w=878c96e" title="Lorem ipsum">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ullam necessitatibus neque dolore, officiis pariatur quibusdam non expedita quas porro nemo quis ipsam nobis magni, rem quaerat sint earum. Quisquam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim ipsam impedit labore unde reiciendis cupiditate dolor nulla, rem quis! Nisi excepturi, corporis similique eum tenetur optio aperiam distinctio vitae cum?
+        </CardsSection>
         </div>
 
         <TextSection   showButton={true} href="/register" childrenBtn="Cadastre-se" >

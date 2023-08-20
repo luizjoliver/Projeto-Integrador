@@ -27,3 +27,13 @@ transition: 600ms;
     border: 2px solid $Pink;
     background-color: $Pink;
 }
+@media (max-width:600px){
+    .button{
+        padding: 5px;
+    }
+}
+@media (max-width:400px){
+.button{
+    padding: 2px;
+}
+}

@@ -5,7 +5,7 @@ const VideoSection = ({videoUrl}) =>{
     <>
     <section className={styles.videoSection}>
         <div className={styles.videoContent}>
-            <iframe src="" frameborder="0" className={styles.video} allow="autoplay;" allowfullscreen>
+            <iframe src=""  className={styles.video} allow="autoplay;" allowFullScreen>
 
             </iframe>
         </div>

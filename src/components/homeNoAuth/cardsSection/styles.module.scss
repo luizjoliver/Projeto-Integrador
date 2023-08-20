@@ -1,22 +1,28 @@
 @import  "../../../../styles/global-colors.scss";
 
 .main{
+  width: 100%;
   height: 620px;
-  background-color: $Gray-light
+  background-color: $Gray-light;
 }
 .cardsContent{
   width: 100%;
-  height: 200px;
+  height: 34%;
+  padding: 0 3%;
   background-color: $Gray-light;
   h2{
     padding-top: 50px;
     padding-bottom: 20px;
-    text-align: center;
+    text-align: left;
+}
+.description{
+  text-align: justify;
+  
 }
 }
 .cardsContainer{
   width: 100%;
-  height: calc( 500px - 200px);
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,4 +43,20 @@
 }
 .imgCard2{
   @extend .imgCard ;
+}
+@media (max-width:768px){
+  .cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cardsContent{
+        h2{
+          font-size: 20px;
+          text-align: center;
+            }
+  }
+  .main{
+    height: 1200px;
+  }
+  
 }

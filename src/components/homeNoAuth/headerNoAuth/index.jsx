@@ -6,6 +6,7 @@ const HeaderNoAuth = () =>{
                   <header className={styles.header}>  
                         <nav className={styles.navBar}>
                                 <Link href="/" className={styles.petZoneLogo}>PetZone</Link>
+                                <span className={styles.bar}></span> 
                                 <Link href="/">Inicio</Link>
                                 <Link href="/">Sobre</Link>
                                 <Link href="/">App</Link>

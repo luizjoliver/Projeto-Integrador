@@ -1,12 +1,12 @@
 import styles from "./styles.module.scss"
 
-const CardsSection = ({imgUrl1,imgUrl2}) =>{
+const CardsSection = ({imgUrl1,imgUrl2,children,title}) =>{
     return(
         <>
                  <section className={styles.main}>
                     <div className={styles.cardsContent}>
-                        <h2>Lorem  Ipsum</h2>
-                        <p>Integer in sagittis orci, nec feugiat turpis. Integer tellus velit, viverra eget quam vel, molestie molestie elit. Maecenas tincidunt felis turpis convallis.</p>
+                        <h2>{title}</h2>
+                        <p className={styles.description}>{children}</p>
                     </div>
                     <div className={styles.cardsContainer}>
                         <div className={styles.imgCard1} style={{backgroundImage:`url(${imgUrl1})`}}></div>

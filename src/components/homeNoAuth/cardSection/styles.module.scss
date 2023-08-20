@@ -40,8 +40,31 @@
     margin-bottom: 40px;
   }
   .description{
+    text-align: center;
     margin-bottom: 100px;
     margin-left: 40px;
     margin-right: 40px;
+  }
+}
+@media (max-width:622px){
+  .card{
+    display: block;
+  }
+  .imgCard{
+    margin: 0 auto;
+    width: 70%;
+    height: 50%;
+  }
+  .cardContent{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+}
+@media (max-width:312px){
+  .cardContent{
+    font-size: 12px;
   }
 }
