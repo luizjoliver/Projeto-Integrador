@@ -8,8 +8,11 @@
    flex-direction: row;
 }
 @media(max-width:768px){
-  
   .main{
    flex-direction: column;
+  }
+  .ImageAuth {
+    max-width: 100%; /* Ocupa toda a largura disponível */
+    background-color: #f2f2f2; /* Defina a cor de fundo desejada */
   }
 }

@@ -36,6 +36,7 @@
     background-color: $Dark;
     width: 600px;
     height: 350px;
+    margin: 0 5%;
     border-radius: 50px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,18 +48,23 @@
 .imgCard2{
   @extend .imgCard ;
 }
-@media (max-width:768px){
+@media (max-width:826px){
   .cardsContainer{
     display: flex;
     flex-wrap: wrap;
   }
   .cardsContent{
+    padding-top: 10%;
         h2{
           font-size: 20px;
           text-align: center;
             }
+            .description{
+              font-size: 14px;
+            }
   }
   .main{
+   
     height: 1200px;
   }
   

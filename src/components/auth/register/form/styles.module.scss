@@ -1,8 +1,8 @@
 @import "../../../../../styles/global-colors.scss";
 //842    421
 .formContainer{
-    width: 65%;
-    height: auto;
+    width: 50%;
+    height: 100%;
     background-color: $Dark;
     display: flex;
     justify-content: center;
@@ -10,8 +10,8 @@
     
 }
 .formGroup{
-    height: 60%;
-    width: 80%;
+    height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,6 +65,11 @@
         color: $Purple-dark
     }
     label{
-        color: $Purple-light
+        color: $Pink
     }
 }
+ @media(max-width:768px){
+    .formContainer{
+        width: 100%;
+    }
+ }

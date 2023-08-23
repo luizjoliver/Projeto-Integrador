@@ -76,8 +76,13 @@
     }
     
 }
-@media (max-width:400px){
+@media (max-width:490px){
     .textSection1,.textSection2{
         height: 590px;
+    }
+}
+@media (max-width:374px){
+    .textSection1,.textSection2{
+        height: 680px;
     }
 }

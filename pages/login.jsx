@@ -2,6 +2,7 @@ import LoginForm from "@/src/components/auth/login/form"
 import ImageAuth from "@/src/components/common/imageAuth"
 import Head from "next/head"
 import styles from "../styles/login.module.scss"
+
 const Login = () =>{
     return(
         <>
@@ -10,7 +11,7 @@ const Login = () =>{
          <title>PetZone - Login</title>
         </Head>
             <main className={styles.main}>
-                <ImageAuth/>
+                <ImageAuth className={styles.ImageAuth}/>
                 <LoginForm title="Login" btnText="Entrar" />
             </main>
 
