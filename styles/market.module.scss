@@ -1,0 +1,17 @@
+@import "./global-colors.scss";
+
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+}
+.marketContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color:$Gray-light ;
+}
