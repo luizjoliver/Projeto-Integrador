@@ -1,7 +1,7 @@
 import Link from "next/link"
 import styles from "./styles.module.scss"
 
-const Button = ({children,href, showButton,bgColor,...rest}) =>{
+const Button = ({children,href, showButton,bgColor}) =>{
     return(<>
     
         { showButton && <div className={styles.container}>

@@ -28,7 +28,7 @@ const LoginForm = ({title,btnText}) =>{
                                 </div>
                         </div>
 
-                        <Button showButton bgColor="Pink" href="/">{btnText}</Button>
+                        <Button showButton bgColor="Pink" href="/home">{btnText}</Button>
                      
                 </div>
             </section>
