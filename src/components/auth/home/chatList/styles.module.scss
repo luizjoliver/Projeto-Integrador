@@ -1,0 +1,34 @@
+@import "../../../../../styles/global-colors.scss";
+
+.chatListContainer{
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+}
+.search{
+    min-width: 15%;
+    border-radius: 10px;
+    background-color: $White;
+    margin-left: 10%;
+
+}
+.search::placeholder{
+    font-weight: 400;
+    padding-left: 10px;
+}
+.add{
+    margin-left: 2%;
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.chats{
+    width: 100%;
+    height: 100%;
+}
+.chat{
+  height: 110px;
+  &:nth-child(even){
+    background-color: #BFBFBF;
+  }
+}
