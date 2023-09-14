@@ -1,0 +1,54 @@
+@import "../../../../../styles/global-colors.scss";
+
+
+.marketContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: $White;
+}
+
+.renderedContent{
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.productsCategory{
+width: 100%;
+height: 35%;
+gap: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.product{
+    background-color: $Gray-light;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.featured{
+    width: 90%;
+    height: 100%;
+    margin: 5%  auto 0 auto;
+    background-color: $Gray-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.noRendered{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

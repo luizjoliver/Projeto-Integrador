@@ -23,10 +23,10 @@ export default function Home(){
         <>
         <div className={styles.main}>
             <AsideComponent/>
-                <ContentHome animal={pets}>
+                <ContentHome animal={pets} >
                     <HeaderAuth title="PetZone" left/>
                 </ContentHome>
-            <InfoComponent title="Notificações"/>
+            <InfoComponent title="Notificações" />
         </div>
         </>
     )

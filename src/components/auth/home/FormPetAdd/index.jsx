@@ -13,7 +13,7 @@ export default function FormPetAdd(){
                                 <div className={styles.animalsAtt}>
                                     <label htmlFor="nome">Nome *</label>
                                     <input type="text"  placeholder="Ex: Rex" id="nome"/>
-                                    <label for="animals">Espécie/tipo *</label>
+                                    <label htmlFor="animals">Espécie/tipo *</label>
                                     <select name="animals" id="animals">
                                         <option value="Cachorro">Cachorro</option>
                                         <option value="Gato">Gato</option>
@@ -22,10 +22,17 @@ export default function FormPetAdd(){
                                     </select>
                                     <label htmlFor="date">Data de nascimento *</label>
                                     <input type="date" id="date" />
+                                    <label htmlFor="sexo">Sexo *</label>
+                                    <select name="sexo" id="sexo">
+                                        <option value="masculino">Masculino</option>
+                                        <option value="feminio">Feminio</option>
+                                    </select>
                                 </div>
-                            <div>
+                            <div className={styles.restrictions}>
                                 <label htmlFor="txtArea" >Restrições/Observações</label>
                                 <textarea name="txtArea" id="txtArea" cols="30" rows="10"className={styles.txtArea} />
+                                <label htmlFor="foto">Foto (Escolha a foto do seu pet)</label>
+                                <input type="file" id="foto"  />
                                 
                             </div>
                     </form>

@@ -18,18 +18,28 @@
 .contentAnimal{
     display: flex;
     align-items: flex-start;
+    flex-direction: row;
     justify-content: center;
     gap:70px;
+    margin-left: 3%;
     width: 100%;
     height: 100%;
     .petName{
         font-size: 1.5rem;
         font-weight: bold;
-    }
-    .restriction{
-        border-bottom: 2px solid $Purple-light;
+        
     }
     .restrictionP{
         margin-top: 5%;
+        span{
+            border-bottom: 1px solid $Purple-dark;
+        }
+    }
+}
+
+.addVacina{
+    font-size: 15px;
+    a{
+        color: $Purple-dark;
     }
 }

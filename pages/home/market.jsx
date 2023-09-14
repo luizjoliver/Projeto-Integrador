@@ -3,9 +3,23 @@ import styles from "../../styles/market.module.scss"
 import MarketAside from "@/src/components/auth/home/marketAside"
 import HeaderAuth from "@/src/components/common/headerAuth"
 import MarketContent from "@/src/components/auth/home/marketContent"
+import { useEffect, useState } from "react"
+import axios from "axios"
 
 
 export default function Map(){
+
+  const [products,setProducts] = useState([])
+
+  useEffect(() =>{
+    fetchProducts()
+},[])
+
+const fetchProducts = async () =>{
+    const resp =  await axios.get("http://localhost:3000/api/products").then(res => res.data)
+    setProducts(resp)
+}
+
     return(
         <>
         <div className={styles.main}>
@@ -18,7 +32,7 @@ export default function Map(){
                     </HeaderAuth>
                   </div>
                   <div className={styles.marketSection}>
-                    <MarketContent/>
+                    <MarketContent products={products}/>
                   </div>
                 </div>
             <MarketAside/>

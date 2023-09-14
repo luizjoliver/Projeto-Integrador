@@ -8,10 +8,12 @@ export default function AsideComponent (){
         <>
         <aside className={styles.aside}>
             <ul className={styles.ul}>
+            
                 <Link href="/home" className={styles.logoInicial}><LuDog/></Link>
                 <Link href="/home/map"><LuMap/></Link>
                 <Link href="/home/market"><LuShoppingCart/></Link>
                 <Link href="/home/chat"><BsChat/></Link>
+                
             </ul>
             <ul className={styles.ulSetting}>
                 <Link href="/home"><FiSettings/></Link>

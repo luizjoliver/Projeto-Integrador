@@ -1,8 +1,9 @@
 import Button from "@/src/components/common/Button"
 import styles from "./styles.module.scss"
+import Link from "next/link";
 
 export default function ContentHome({children,animal}){
-
+    console.log(animal);
    const renderedAnimals = (animal) =>{
        return animal.map(pet => (
                 <>
@@ -11,6 +12,18 @@ export default function ContentHome({children,animal}){
                         <li>Idade: {pet.idade}</li>
                         <li>Espécie/Tipo: {pet.tipo}</li>
                         <p className={styles.restrictionP}><span className={styles.restriction}>Restrições : </span>{pet.restricoes}</p>
+                        <h2><strong>Vacinas</strong></h2>
+                        <ul>
+                            {pet.vacinas?.map((vacinas,i) =>( 
+                            <>
+                            <li>{vacinas.nome}</li>
+                            <li>{vacinas.data}</li>
+                            </>
+                            ))}
+                            <span className={styles.addVacina}>
+                                <Link href="/home/vacinaAdd">Adiconar vacina ...</Link>
+                            </span>
+                        </ul>
                     </ul>
                 </>
         ))
