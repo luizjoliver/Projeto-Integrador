@@ -7,21 +7,24 @@ export default function ContentHome({children,animal}){
    const renderedAnimals = (animal) =>{
        return animal.map(pet => (
                 <>
-                    <ul>
+                    <ul className={styles.listAnimal}>
+                        <img src={pet.imgPet} alt="imgPet" className={styles.petImg} />
                         <li className={styles.petName}>{pet.nome}</li>
-                        <li>Idade: {pet.idade}</li>
-                        <li>Espécie/Tipo: {pet.tipo}</li>
-                        <p className={styles.restrictionP}><span className={styles.restriction}>Restrições : </span>{pet.restricoes}</p>
-                        <h2><strong>Vacinas</strong></h2>
+                        <li><span className={styles.atributte}>Idade:</span> {pet.idade}</li>
+                        <li><span className={styles.atributte}>Espécie/Tipo:</span> {pet.tipo}</li>
+                        <p><span className={styles.atributte}>Restrições: </span>{pet.restricoes}</p>
+                        <h2 className={styles.atributte} >Vacinas</h2>
                         <ul>
                             {pet.vacinas?.map((vacinas,i) =>( 
                             <>
-                            <li>{vacinas.nome}</li>
-                            <li>{vacinas.data}</li>
+                            <div className={styles.petAtts}>
+                                <li>{vacinas.nome} - </li>
+                                <li className={styles.date}>{vacinas.data}</li>
+                            </div>
                             </>
                             ))}
                             <span className={styles.addVacina}>
-                                <Link href="/home/vacinaAdd">Adiconar vacina ...</Link>
+                                <Link href="/home/vacinaAdd">Adiconar vacina +</Link>
                             </span>
                         </ul>
                     </ul>

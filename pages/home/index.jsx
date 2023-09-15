@@ -26,7 +26,6 @@ export default function Home(){
                 <ContentHome animal={pets} >
                     <HeaderAuth title="PetZone" left/>
                 </ContentHome>
-            <InfoComponent title="Notificações" />
         </div>
         </>
     )

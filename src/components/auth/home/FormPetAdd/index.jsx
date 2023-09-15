@@ -35,6 +35,12 @@ export default function FormPetAdd(){
                                 <input type="file" id="foto"  />
                                 
                             </div>
+                            <div className={styles.vacinaContainer}>
+                                <label htmlFor="vacina">Nome (Primeira Vacina)</label>
+                                <input type="text" name="vacina" id="vacina"/>
+                                <label htmlFor="vacina">Data Vacina</label>
+                                <input type="date" />
+                            </div>
                     </form>
                     <Button showButton href="/home" >Cadastrar</Button>
                 </div>
